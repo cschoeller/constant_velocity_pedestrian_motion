@@ -75,9 +75,6 @@ class Sample():
         if len(self) < min_length:
             return []
 
-        if len(self) <= sequence_length:
-            return [self]
-
         split_samples = []
         start_index = 0
         end_index = sequence_length
@@ -87,7 +84,7 @@ class Sample():
             start_index += 1
             end_index = start_index + sequence_length
             
-            if len(new_sample) <= min_length: # don't consider too short samples
+            if len(new_sample) < min_length: # don't consider too short samples
                 continue
 
             split_samples.append(new_sample)
