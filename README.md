@@ -15,3 +15,8 @@ Prediction examples of **OUR** (left) and **OUR-S** (right):
 <img src="images/pred_our.png" width="40%" height="40%" align="left">
 <img src="images/pred_our-s.png" width="40%" height="40%" align="center">
 
+**NOTE**:
+We fixed minor discrepancies in the data loading, this leads to changes in the final results. We will update the manuscript with this changes. The new errors for the CVM are (ADE/FDE):
+OUR: 0.39/0.83
+OUR-S: 0.28/0.56
+
